@@ -1,0 +1,172 @@
+*{
+	box-sizing: border-box;
+
+}
+body{
+	margin:0;
+	padding:0;
+	/*max-width:1000px;
+	margin: 0 auto;*/
+}
+
+h1,h2,h3{
+	font-family: 'Sigmar One', cursive;
+}
+
+p{
+	font-family: 'Lato', sans-serif;
+}
+
+/* begin global header section */
+header{
+	display:flex;
+	justify-content: space-between;
+	padding: 1rem 0;
+}
+
+.header-left{
+	flex-basis:40%;
+}
+
+.header-center{
+	flex-basis:20%;
+	text-align:center;
+}
+
+.header-center img{
+	width:60%;
+}
+
+.header-right{
+	flex-basis:40%;
+	text-align:right;
+}
+.header-right>span{
+	margin:0 0.5rem;
+}
+.header-right i{
+	font-size:15px;
+}
+.header-right a{
+	color: black;
+}
+/*header>div{
+	border:1px solid red;
+}*/
+@media only screen and (max-width: 600px){
+	header{
+		flex-direction: column;
+	}
+
+	.header-left{
+		display:none;
+	}
+}
+/* end global header section */
+
+/* begin global navigation*/
+nav{
+	background-color:#005;
+	/*display:flex;
+	justify-content: center;*/
+	text-align: center;
+	padding:0.7rem;
+}
+nav>a{
+	color:white;
+	text-decoration: none;
+	font-size:16pt;
+	margin:0 2rem;
+	font-weight: bold;
+	transition: color 0.6s;
+}
+
+nav>a:hover{
+	color:red;
+}
+.nav-icon{
+	display:none;
+}
+
+@media only screen and (max-width: 600px){
+	nav>a{
+		display:none;
+		/*flex-direction: column;*/
+		display:block;
+	}
+	.nav-icon{
+		display:inline;
+	}
+}
+
+/* end global navigation*/
+
+/* begin banner section*/
+/*.banner-bgImg{
+	position: absolute;
+	z-index: -1;
+}
+.banner-bgImg img{
+	width:100vw;
+}*/
+.home-banner{
+	background-image: url("../images/banner.jpg");
+	background-size: cover;
+	background-position: top center;
+	height:70vw;
+
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.home-banner h1, .home-banner p{
+	color:white;
+}
+.home-banner p{
+	width:50%;
+	margin: auto;
+}
+.home-banner h1{
+	font-size:5vw;
+}
+.banner-btn a{
+	background-color: white;
+	padding:1rem 5rem;
+	text-decoration: none;
+	color:black;
+	transition: all 1s;
+
+}
+
+.banner-btn a:hover{
+	background-color: red;
+	color: white;
+
+}
+@media only screen and (max-width: 600px){
+	.home-banner p{
+		display: none;
+	}
+}
+/*.home-banner{
+	text-align: center;
+}*/
+/* end banner section*/
+
+/* begin home main section*/
+main>.home-main-1{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.home-main-1>div{
+	border:1px solid red;
+	flex-basis: 40%;
+	padding:2rem;
+
+}
+/* end home main section*/
+
+
